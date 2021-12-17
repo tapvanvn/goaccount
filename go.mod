@@ -1,4 +1,4 @@
-module goaccount
+module github.com/tapvanvn/goaccount
 
 require (
 	github.com/tapvanvn/goauth v0.0.1-build.25
