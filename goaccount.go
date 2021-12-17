@@ -22,6 +22,7 @@ func InitGoAccount(eng *engine.Engine, accountProvider IAccountProvider, config 
 
 		return ErrRequireAccountProvider
 	}
+	__account_provider = accountProvider
 
 	__engine = eng
 	__auth = goauth.NewAuth(&RepoAuth{})
