@@ -1,6 +1,8 @@
 package goaccount
 
 import (
+	"strings"
+
 	"github.com/tapvanvn/goauth"
 	"github.com/tapvanvn/goauth/eth"
 	"github.com/tapvanvn/godbengine/engine"
@@ -10,9 +12,15 @@ var __engine *engine.Engine = nil
 var __auth *goauth.Auth = nil
 var __account_provider IAccountProvider = nil
 
-func InitGoAccount(eng *engine.Engine, accountProvider IAccountProvider, config *Config) error {
+func InitGoAccount(eng *engine.Engine, dbPrefix string, accountProvider IAccountProvider, config *Config) error {
 
 	docdb := eng.GetDocumentPool()
+	dbPrefix = strings.TrimSpace(dbPrefix)
+
+	if len(dbPrefix) > 0 {
+
+		setCollectionPrefix(dbPrefix)
+	}
 
 	if docdb == nil {
 

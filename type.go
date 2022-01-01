@@ -20,12 +20,23 @@ const (
 	IdentityEmpty = Identity("")
 )
 
+var (
+	__prefix_passport = "passport"
+	__prefix_account  = "account"
+)
+
+func setCollectionPrefix(prefix string) {
+	__prefix_passport = fmt.Sprintf("%s_passport", prefix)
+	__prefix_account = fmt.Sprintf("%s_account", prefix)
+	__prefix = prefix
+}
+
 func CollectionPassport(provider Provider) string {
 
-	return fmt.Sprintf("%s_passport_%s", __prefix, provider)
+	return fmt.Sprintf("%s_%s", __prefix_passport, provider)
 }
 func CollectionAccount() string {
-	return fmt.Sprintf("%s_account", __prefix)
+	return __prefix_account
 }
 
 type IPassport interface {
