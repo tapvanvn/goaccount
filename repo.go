@@ -10,6 +10,7 @@ import (
 func GetPassport(identity Identity, passport IPassport) error {
 
 	docdb := __engine.GetDocumentPool()
+	//fmt.Println("passport", CollectionPassport(passport.GetProvider()), identity)
 	return docdb.Get(CollectionPassport(passport.GetProvider()), string(identity), passport)
 }
 

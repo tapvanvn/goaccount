@@ -1,10 +1,12 @@
 module github.com/tapvanvn/goaccount
 
 require (
-	github.com/tapvanvn/goauth v0.0.1-build.35
+	github.com/tapvanvn/goauth v0.0.1-build.37
 	github.com/tapvanvn/godbengine v1.4.9-build.33
 )
-
+//replace (
+//github.com/tapvanvn/goauth => ../goauth
+//)
 require (
 	github.com/btcsuite/btcd/btcec/v2 v2.2.0 // indirect
 	github.com/decred/dcrd/dcrec/secp256k1/v4 v4.0.1 // indirect

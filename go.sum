@@ -443,6 +443,10 @@ github.com/stretchr/testify v1.7.0/go.mod h1:6Fq8oRcR53rry900zMqJjRRixrwX3KX962/
 github.com/syndtr/goleveldb v1.0.1-0.20210819022825-2ae1ddf74ef7/go.mod h1:q4W45IWZaF22tdD+VEXcAWRA037jwmWEB5VWYORlTpc=
 github.com/tapvanvn/goauth v0.0.1-build.35 h1:ZHSmtBGPotP7TNT31At0QBMQoKplPHe6w6w5VpGXD0s=
 github.com/tapvanvn/goauth v0.0.1-build.35/go.mod h1:cJb3zq4V3d+AX20XIxB0+cS7hvvVGNbRcnsAmbWwc+s=
+github.com/tapvanvn/goauth v0.0.1-build.36 h1:ssTzeNcamSMEO6XlKPxWsbU9qHrUbnujwVENxlD5Xac=
+github.com/tapvanvn/goauth v0.0.1-build.36/go.mod h1:cJb3zq4V3d+AX20XIxB0+cS7hvvVGNbRcnsAmbWwc+s=
+github.com/tapvanvn/goauth v0.0.1-build.37 h1:9F2cGPeJgveppeIZkLy387mNwGI8qN0S4a6fubU8n80=
+github.com/tapvanvn/goauth v0.0.1-build.37/go.mod h1:cJb3zq4V3d+AX20XIxB0+cS7hvvVGNbRcnsAmbWwc+s=
 github.com/tapvanvn/gocondition v1.0.0-alpha.1 h1:QshnZjBxyeaEjIa/JIhRFON+KOu0CTBgtxAESr7obhs=
 github.com/tapvanvn/gocondition v1.0.0-alpha.1/go.mod h1:SXgyuqequR31PefwOD5TU9fHU+tCaCrRPlyDiEtZBfQ=
 github.com/tapvanvn/godbengine v1.4.9-build.33 h1:qo7NwvYHqhzUtQCk2ye3ywnIrUANYUOEhILTYp0RhEs=

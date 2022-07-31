@@ -11,11 +11,12 @@ type Provider string
 type Identity string
 
 const (
-	ProviderEthereum     = Provider("ethereum")
-	ProviderEmail        = Provider("email")
-	ProviderUsernamePass = Provider("userpass")
-	ProviderApple        = Provider("apple")
-	ProviderGoogle       = Provider("google")
+	ProviderEthereum = Provider("ethereum")
+	ProviderEmail    = Provider("email")
+	ProviderUsername = Provider("username")
+	ProviderApple    = Provider("apple")
+	ProviderGoogle   = Provider("google")
+	ProviderMomo     = Provider("momo")
 
 	IdentityEmpty = Identity("")
 )
@@ -47,7 +48,7 @@ type IPassport interface {
 	GetAccountID() Identity
 	SetAccountID(accountID Identity) //set binding to account
 
-	CloneEmpty() IPassport //clone provider but setting others attribute to empty
+	CloneEmpty() IPassport //clone provider but setting other attributes to empty
 }
 
 type IAccount interface {
