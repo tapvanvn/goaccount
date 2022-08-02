@@ -1,11 +1,10 @@
 package goaccount
 
 type PassportMomo struct {
-	AccountID Identity `json:"AccountID" bson:"AccountID"`
-	//AppID     string
-	MiniAppUserId string `json:"MiniAppUserId" bson:"MiniAppUserId"`
-	//PartnerUserID string `json:"PartnerUserId" bson:"PartnerUserId"`
-	//AuthCode string `json:"AuthCode" bson:"AuthCode"`
+	AccountID     Identity `json:"AccountID" bson:"AccountID"`
+	MiniAppUserId string   `json:"MiniAppUserId" bson:"MiniAppUserId"`
+	PartnerUserID string   `json:"PartnerUserId" bson:"PartnerUserId"`
+	AuthCode      string   `json:"AuthCode" bson:"AuthCode"`
 }
 
 //MARK: implement IPassport
@@ -33,7 +32,7 @@ func (doc *PassportMomo) SetAccountID(accountID Identity) {
 func (doc *PassportMomo) CloneEmpty() IPassport {
 	return &PassportMomo{
 		MiniAppUserId: doc.MiniAppUserId,
-		//AuthCode:      doc.AuthCode,
-		//AppID:         doc.AppID,
+		PartnerUserID: doc.PartnerUserID,
+		AuthCode:      doc.AuthCode,
 	}
 }
