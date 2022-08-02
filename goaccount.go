@@ -56,7 +56,8 @@ func InitGoAccount(eng *engine.Engine, dbPrefix string, accountProvider IAccount
 
 	if config.MomoMiniApp != nil {
 
-		client, err := momo.NewMiniappClient(config.MomoMiniApp.AppID)
+		momoConf := config.MomoMiniApp
+		client, err := momo.NewMiniappClient(momoConf.AppID, momoConf.IsDev, momoConf.OpenSecret, momoConf.OpenPrivateKey, momoConf.OpenPublicKey)
 		if err != nil {
 			return err
 		}

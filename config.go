@@ -7,6 +7,10 @@ type ConfigEthereum struct {
 type ConfigMomoMiniApp struct {
 	AppID             string `json:"AppID"`
 	AutoCreateAccount bool   `json:"AutoCreateAccount"`
+	OpenSecret        string `json:"OpenSecret"`
+	OpenPrivateKey    string `json:"OpenPrivateKey"`
+	OpenPublicKey     string `json:"OpenPublicKey"`
+	IsDev             bool   `json:"IsDev"`
 }
 
 type Config struct {
