@@ -1,7 +1,7 @@
 module github.com/tapvanvn/goaccount
 
 require (
-	github.com/tapvanvn/goauth v0.0.1-build.39
+	github.com/tapvanvn/goauth v0.0.1-build.40
 	github.com/tapvanvn/godbengine v1.4.9-build.35
 )
 
@@ -18,7 +18,7 @@ replace (
 require (
 	github.com/btcsuite/btcd/btcec/v2 v2.2.0 // indirect
 	github.com/decred/dcrd/dcrec/secp256k1/v4 v4.0.1 // indirect
-	github.com/ethereum/go-ethereum v1.10.18 // indirect
+	github.com/ethereum/go-ethereum v1.10.21 // indirect
 	github.com/miguelmota/go-solidity-sha3 v0.1.1 // indirect
 	github.com/tapvanvn/gocondition v1.0.0-alpha.1 // indirect
 	github.com/tapvanvn/goutil v0.0.18-build.20 // indirect
