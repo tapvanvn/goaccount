@@ -5,6 +5,7 @@ type PassportMomo struct {
 	MiniAppUserId string   `json:"MiniAppUserId" bson:"MiniAppUserId"`
 	PartnerUserID string   `json:"PartnerUserId" bson:"PartnerUserId"`
 	AuthCode      string   `json:"AuthCode" bson:"AuthCode"`
+	Name          string   `json:"Name" bson:"Name"`
 }
 
 //MARK: implement IPassport
@@ -34,5 +35,6 @@ func (doc *PassportMomo) CloneEmpty() IPassport {
 		MiniAppUserId: doc.MiniAppUserId,
 		PartnerUserID: doc.PartnerUserID,
 		AuthCode:      doc.AuthCode,
+		Name:          doc.Name,
 	}
 }
