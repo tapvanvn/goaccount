@@ -44,6 +44,8 @@ type IPassport interface {
 	GetID() string           //documentdb interface
 	GetPassportID() Identity //account id in provider system
 	GetProvider() Provider   //
+	HasTitle() bool          //incase this passport can provide a title for account
+	GetTitle() string        //if passport has title then provide it
 
 	GetAccountID() Identity
 	SetAccountID(accountID Identity) //set binding to account
@@ -54,6 +56,7 @@ type IPassport interface {
 type IAccount interface {
 	GetID() string          //documentdb interface
 	GetAccountID() Identity //account id in host system
+	SetTitle(string)        //Set account title
 }
 
 type IAccountProvider interface {

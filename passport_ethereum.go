@@ -35,3 +35,10 @@ func (doc *PassportEthereum) CloneEmpty() IPassport {
 		WalletAddress: doc.WalletAddress,
 	}
 }
+
+func (doc *PassportEthereum) HasTitle() bool {
+	return false
+}
+func (doc *PassportEthereum) GetTitle() string {
+	return ""
+}

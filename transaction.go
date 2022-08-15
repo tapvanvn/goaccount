@@ -13,6 +13,11 @@ func SignupFromPassport(passport IPassport, context context.Context) (IAccount, 
 	}
 	acc := __account_provider.NewAccount(context)
 
+	if passport.HasTitle() {
+
+		acc.SetTitle(passport.GetTitle())
+	}
+
 	passport.SetAccountID(acc.GetAccountID())
 
 	trans := __engine.GetDocumentPool().MakeTransaction()

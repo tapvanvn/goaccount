@@ -38,3 +38,9 @@ func (doc *PassportMomo) CloneEmpty() IPassport {
 		Name:          doc.Name,
 	}
 }
+func (doc *PassportMomo) HasTitle() bool {
+	return true
+}
+func (doc *PassportMomo) GetTitle() string {
+	return doc.Name
+}

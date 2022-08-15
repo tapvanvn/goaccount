@@ -36,3 +36,10 @@ func (doc *PassportUsername) CloneEmpty() IPassport {
 		Salt:           doc.Salt,
 	}
 }
+
+func (doc *PassportUsername) HasTitle() bool {
+	return true
+}
+func (doc *PassportUsername) GetTitle() string {
+	return doc.Username
+}
