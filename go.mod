@@ -1,12 +1,12 @@
 module github.com/tapvanvn/goaccount
 
 require (
-	github.com/tapvanvn/goauth v0.0.1-build.40
+	github.com/tapvanvn/goauth v0.0.1-build.41
 	github.com/tapvanvn/godbengine v1.4.9-build.35
 )
 
 require (
-	github.com/tapvanvn/gomomo v0.0.1-build.2 // indirect
+	github.com/tapvanvn/gomomo v0.0.1-build.3 // indirect
 	github.com/tapvanvn/gorouter/v2 v2.0.9-build.12 // indirect
 )
 
