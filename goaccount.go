@@ -89,7 +89,6 @@ func GetClientType(provider Provider) goauth.ClientType {
 
 func StartSession(passport IPassport) (goauth.ISession, error) {
 
-	//fmt.Println("start session", clientType, clientAccountID)
 	authClientType := GetClientType(passport.GetProvider())
 	if authClientType == goauth.ClientTypeUnknown {
 		return nil, goauth.ErrClientNotFound

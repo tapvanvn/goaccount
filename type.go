@@ -9,6 +9,8 @@ var __prefix string = ""
 
 type Provider string
 type Identity string
+type TwoFASecret string
+type TwoFAOTP string
 
 const (
 	ProviderEthereum = Provider("ethereum")
@@ -57,6 +59,9 @@ type IAccount interface {
 	GetID() string          //documentdb interface
 	GetAccountID() Identity //account id in host system
 	SetTitle(string)        //Set account title
+	//2FA
+	Get2FASecret() string
+	Set2FASecret(secret string)
 }
 
 type IAccountProvider interface {
