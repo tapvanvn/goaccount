@@ -1,7 +1,7 @@
 module github.com/tapvanvn/goaccount
 
 require (
-	github.com/tapvanvn/goauth v0.0.1-build.41
+	github.com/tapvanvn/goauth v0.0.1-build.42
 	github.com/tapvanvn/godbengine v1.4.9-build.35
 )
 
